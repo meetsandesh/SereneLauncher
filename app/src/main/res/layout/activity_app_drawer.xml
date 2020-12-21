@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_background"
+    tools:context=".AppDrawer"
+    android:id = "@+id/appDrawerLayout" >
+
+    <TableLayout
+        android:id="@+id/tbl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_collapse_arrow"
+                app:tint="@color/white"
+                >
+            </ImageView>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <SearchView
+        android:id="@+id/search_apps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/blank"
+        android:layout_below="@+id/tbl2" >
+    </SearchView>
+
+    <ListView
+        android:id = "@+id/appList1"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below="@+id/search_apps" >
+    </ListView>
+
+</RelativeLayout>

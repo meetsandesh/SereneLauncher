@@ -1,0 +1,5 @@
+<resources>
+    <string name="hello_world">Hello Round World!</string>
+    <string name="battery">Battery</string>
+    <string name="blank" />
+</resources>
